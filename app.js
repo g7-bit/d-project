@@ -136,6 +136,7 @@ app.all("*", (req, res, next) => {
 
 
 app.use((err, req, res, next) => {
+  // setting default values
   let { statusCode = 500, message = "Something Went wrong" } = err;
   res.status(statusCode).render("error.ejs", { err });
   // res.status(statusCode).send(message)
@@ -146,3 +147,4 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log("server is listeneing on port 8080");
 });
+ 

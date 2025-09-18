@@ -3,3 +3,4 @@ node-modules/
 
 # following syntax to ignore the folder from everywhere
 **/.DS_Store 
+.vercel

@@ -29,3 +29,4 @@ module.exports.destroyReview = async (req, res) => {
 
     res.redirect(`/listings/${id}`);
   }
+  

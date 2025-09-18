@@ -1,6 +1,7 @@
 const Listing = require("./models/listing.js")
 const Review = require("./models/review.js")
 const expressError= require("./utils/expressError.js")
+//joi
 const {listingSchema,reviewSchema} = require("./schema.js")  //use {destructuring when want to only import specific required}
 
 
